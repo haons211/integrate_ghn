@@ -40,5 +40,4 @@ public class GHNServiceImpl implements GHNService {
         return responseEntity.getBody();
     }
 
-    public
 }
