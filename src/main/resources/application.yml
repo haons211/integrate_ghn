@@ -1,0 +1,17 @@
+app:
+  name: integrate_GHN
+  ghn:
+    url: https://online-gateway.ghn.vn/ship/api/
+    token: your_token_here
+    version: v2
+    ShopId: your_shop_id_here
+    uri: shipping-order/fee
+
+spring:
+  application:
+    name: integrate_GHN
+
+ghn:
+  token: ${app.ghn.token}
+  url: ${app.ghn.url}/${app.ghn.version}/${app.ghn.uri}
+  ShopId: ${app.ghn.ShopId}
